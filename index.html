@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -48,12 +48,20 @@
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Accueil<br></a></li>
-          <li><a href="about.html">A propos</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="#">Produits</a></li>
+          <li><a href="index.html" class="active" id="nav-home">Accueil<br></a></li>
+          <li><a href="about.html" id="nav-about">A propos</a></li>
+          <li><a href="services.html" id="nav-services">Services</a></li>
+          <li><a href="#" id="nav-products">Produits</a></li>
 
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" id="nav-contact">Contact</a></li>
+
+          <!-- Sélecteur de langue intégré dans le menu -->
+          <li>
+            <select id="languageSelector" onchange="translateContent()">
+              <option value="fr">Français</option>
+              <option value="en">English</option>
+            </select>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -71,15 +79,16 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-4">
-            <h1 data-aos="fade-up">Expertise en Énergie Électrique depuis 2004</h1>
+            <h1 data-aos="fade-up" id="hero-title">Expertise en Énergie Électrique depuis 2004</h1>
             <blockquote data-aos="fade-up" data-aos-delay="100">
-              <p>Créée en 2004 à Marseille (France), La Société PYTHEAS Engineering a pour objet social d’œuvrer dans le
+              <p id="hero-paragraph">Créée en 2004 à Marseille (France), La Société PYTHEAS Engineering a pour objet
+                social d’œuvrer dans le
                 domaine de l’énergie électrique. Ses premières missions ont été effectuées au sein de centrales
                 électriques, avec une spécialité : la maintenance des turbines gaz et au-delà, tous les métiers entrant
                 dans la bonne marche d’une centrale électrique, à travers le monde.</p>
             </blockquote>
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-              <a href="#why-us" class="btn-get-started">Commencer</a>
+              <a href="#why-us" class="btn-get-started" id="hero-btn">Commencer</a>
               <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
             </div>
           </div>
@@ -127,10 +136,10 @@
 
                 <div class="swiper-slide">
                   <div class="item">
-                    <h3 class="mb-3">PYTHEAS Environnement, un leader en froid industriel et énergies renouvelables</h3>
-                    <h4 class="mb-3">20 ans après la création de PYTHEAS Engineering, le groupe poursuit son expansion.
+                    <h3 class="mb-3" id="why-elem1-title">PYTHEAS Environnement, un leader en froid industriel et énergies renouvelables</h3>
+                    <h4 class="mb-3" id="why-elem1-subtitle">20 ans après la création de PYTHEAS Engineering, le groupe poursuit son expansion.
                     </h4>
-                    <p>Installée en Tunisie, PYTHEAS Environnement se spécialise dans le froid industriel et les
+                    <p id="why-elem1-paragraph">Installée en Tunisie, PYTHEAS Environnement se spécialise dans le froid industriel et les
                       solutions d'énergie renouvelable, en collaboration avec des fabricants français de matériel
                       reconnu pour sa haute performance et ses garanties. Que vous soyez professionnel ou particulier,
                       nos produits répondent à vos besoins, de la chambre froide au climatiseur domestique en passant
@@ -140,9 +149,9 @@
 
                 <div class="swiper-slide">
                   <div class="item">
-                    <h3 class="mb-3">Produits de qualité pour répondre à tous vos besoins</h3>
-                    <h4 class="mb-3">Des solutions adaptées aux professionnels comme aux particuliers.</h4>
-                    <p>Nous offrons une gamme de produits variée : chambres froides, climatisation pour appartements, et
+                    <h3 class="mb-3" id="why-elem2-title">Produits de qualité pour répondre à tous vos besoins</h3>
+                    <h4 class="mb-3" id="why-elem2-subtitle">Des solutions adaptées aux professionnels comme aux particuliers.</h4>
+                    <p id="why-elem2-paragraph">Nous offrons une gamme de produits variée : chambres froides, climatisation pour appartements, et
                       installations de panneaux photovoltaïques. PYTHEAS Environnement vous accompagne dans vos choix
                       avec l’expertise d’un groupe international, garantissant performance et durabilité.</p>
                   </div>
@@ -150,9 +159,9 @@
 
                 <div class="swiper-slide">
                   <div class="item">
-                    <h3 class="mb-3">Un accompagnement par des spécialistes expérimentés</h3>
-                    <h4 class="mb-3">Faites confiance à nos experts pour des solutions optimales et durables.</h4>
-                    <p>Nos spécialistes sont disponibles pour vous guider dans les meilleurs choix techniques et
+                    <h3 class="mb-3" id="why-elem3-title">Un accompagnement par des spécialistes expérimentés</h3>
+                    <h4 class="mb-3" id="why-elem3-subtitle">Faites confiance à nos experts pour des solutions optimales et durables.</h4>
+                    <p id="why-elem3-paragraph">Nos spécialistes sont disponibles pour vous guider dans les meilleurs choix techniques et
                       économiques, en tenant compte de vos exigences. Avec PYTHEAS Environnement, vous bénéficiez de
                       l’expérience et de la rigueur d’un groupe de renommée internationale.</p>
                   </div>
@@ -436,7 +445,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/translation.js"></script>
 </body>
 
 </html>
