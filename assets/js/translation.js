@@ -6,13 +6,11 @@ const translations = {
         nav_products: "Produits",
         nav_contact: "Contact",
         hero_section: {
-            title: "Expertise en Énergie Électrique depuis 2004",
+            title: "Expertise en Énergie  depuis 2004",
             paragraph:
                 `
-            Créée en 2004 à Marseille (France), La Société PYTHEAS Engineering a pour objet social d’œuvrer dans le
-                domaine de l’énergie électrique. Ses premières missions ont été effectuées au sein de centrales
-                électriques, avec une spécialité : la maintenance des turbines gaz et au-delà, tous les métiers entrant
-                dans la bonne marche d’une centrale électrique, à travers le monde.
+             Créée en 2004 à Marseille ( France), la société PYTHEAS Engineering a pour métiers l'énergie.
+                Sa filiale dans l'environnement, est spécialisée dans le froid industriel et les énergies renouvelables ( chambres froides, panneaux solaires)
             `,
             btn: "Commencer"
         },
@@ -50,14 +48,15 @@ const translations = {
         nav_products: "Products",
         nav_contact: "Contact",
         hero_section: {
-            title: "Expertise in Electrical Energy Since 2004",
+            title: "Energy Expertise Since 2004",
             paragraph: `
-            Founded in 2004 in Marseille (France), PYTHEAS Engineering specializes in the field of electrical energy.
-            Its initial projects focused on power plants, with a primary specialization in gas turbine maintenance, and expanded
-            to cover all fields essential to the smooth operation of power plants worldwide.
+                Founded in 2004 in Marseille (France), PYTHEAS Engineering specializes in energy solutions.
+                Its environmental subsidiary focuses on industrial cooling and renewable energy, offering products
+                such as cold storage systems and solar panels.
             `,
             btn: "Get Started"
         },
+        
         why_us_section: {
             element1: {
                 title: "PYTHEAS Environment, a Leader in Industrial Cooling and Renewable Energy",
