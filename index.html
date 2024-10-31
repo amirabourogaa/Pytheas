@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -44,16 +44,25 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Pytheas</h1>
+        <h4 class="sitename">PYTHEAS Engineering Environnement</h4>
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Accueil<br></a></li>
-          <li><a href="about.html">A propos</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="#">Produits</a></li>
+          <li><a href="index.html" class="active" id="nav-home">Accueil<br></a></li>
+          <li><a href="about.html" id="nav-about">A propos</a></li>
+          <li><a href="services.html" id="nav-services">Services</a></li>
+          <li><a href="#" id="nav-products">Produits</a></li>
 
-          <li><a href="#">Contact</a></li>
+          <li><a href="contact.html" id="nav-contact">Contact</a></li>
+
+          <!-- Sélecteur de langue intégré dans le menu -->
+          <li>
+            <select id="languageSelector" class="button-style" onchange="translateContent()">
+              <option value="fr">Français</option>
+              <option value="en">English</option>
+            </select>
+          </li>
+
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -71,15 +80,15 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-4">
-            <h1 data-aos="fade-up">Expertise en Énergie Électrique depuis 2004</h1>
+            <h1 data-aos="fade-up" id="hero-title">Expertise en Énergie depuis 2004</h1>
             <blockquote data-aos="fade-up" data-aos-delay="100">
-              <p>Créée en 2004 à Marseille (France), La Société PYTHEAS Engineering a pour objet social d’œuvrer dans le
-                domaine de l’énergie électrique. Ses premières missions ont été effectuées au sein de centrales
-                électriques, avec une spécialité : la maintenance des turbines gaz et au-delà, tous les métiers entrant
-                dans la bonne marche d’une centrale électrique, à travers le monde.</p>
+              <p id="hero-paragraph">
+                Créée en 2004 à Marseille ( France), la société PYTHEAS Engineering a pour métiers l'énergie.
+                Sa filiale dans l'environnement, est spécialisée dans le froid industriel et les énergies renouvelables
+                ( chambres froides, panneaux solaires)</p>
             </blockquote>
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-              <a href="#why-us" class="btn-get-started">Commencer</a>
+              <a href="#why-us" class="btn-get-started" id="hero-btn">Commencer</a>
               <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
             </div>
           </div>
@@ -127,10 +136,13 @@
 
                 <div class="swiper-slide">
                   <div class="item">
-                    <h3 class="mb-3">PYTHEAS Environnement, un leader en froid industriel et énergies renouvelables</h3>
-                    <h4 class="mb-3">20 ans après la création de PYTHEAS Engineering, le groupe poursuit son expansion.
+                    <h3 class="mb-3" id="why-elem1-title">PYTHEAS Environnement, un leader en froid industriel et
+                      énergies renouvelables</h3>
+                    <h4 class="mb-3" id="why-elem1-subtitle">20 ans après la création de PYTHEAS Engineering, le groupe
+                      poursuit son expansion.
                     </h4>
-                    <p>Installée en Tunisie, PYTHEAS Environnement se spécialise dans le froid industriel et les
+                    <p id="why-elem1-paragraph">Installée en Tunisie, PYTHEAS Environnement se spécialise dans le froid
+                      industriel et les
                       solutions d'énergie renouvelable, en collaboration avec des fabricants français de matériel
                       reconnu pour sa haute performance et ses garanties. Que vous soyez professionnel ou particulier,
                       nos produits répondent à vos besoins, de la chambre froide au climatiseur domestique en passant
@@ -140,9 +152,11 @@
 
                 <div class="swiper-slide">
                   <div class="item">
-                    <h3 class="mb-3">Produits de qualité pour répondre à tous vos besoins</h3>
-                    <h4 class="mb-3">Des solutions adaptées aux professionnels comme aux particuliers.</h4>
-                    <p>Nous offrons une gamme de produits variée : chambres froides, climatisation pour appartements, et
+                    <h3 class="mb-3" id="why-elem2-title">Produits de qualité pour répondre à tous vos besoins</h3>
+                    <h4 class="mb-3" id="why-elem2-subtitle">Des solutions adaptées aux professionnels comme aux
+                      particuliers.</h4>
+                    <p id="why-elem2-paragraph">Nous offrons une gamme de produits variée : chambres froides,
+                      climatisation pour appartements, et
                       installations de panneaux photovoltaïques. PYTHEAS Environnement vous accompagne dans vos choix
                       avec l’expertise d’un groupe international, garantissant performance et durabilité.</p>
                   </div>
@@ -150,9 +164,11 @@
 
                 <div class="swiper-slide">
                   <div class="item">
-                    <h3 class="mb-3">Un accompagnement par des spécialistes expérimentés</h3>
-                    <h4 class="mb-3">Faites confiance à nos experts pour des solutions optimales et durables.</h4>
-                    <p>Nos spécialistes sont disponibles pour vous guider dans les meilleurs choix techniques et
+                    <h3 class="mb-3" id="why-elem3-title">Un accompagnement par des spécialistes expérimentés</h3>
+                    <h4 class="mb-3" id="why-elem3-subtitle">Faites confiance à nos experts pour des solutions optimales
+                      et durables.</h4>
+                    <p id="why-elem3-paragraph">Nos spécialistes sont disponibles pour vous guider dans les meilleurs
+                      choix techniques et
                       économiques, en tenant compte de vos exigences. Avec PYTHEAS Environnement, vous bénéficiez de
                       l’expérience et de la rigueur d’un groupe de renommée internationale.</p>
                   </div>
@@ -173,6 +189,26 @@
     </section>
     <!-- /Why Us Section -->
 
+
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10 text-center">
+            <h3>Rejoignez-nous pour transformer votre entreprise !</h3>
+            <p>Explorez nos solutions innovantes et durables qui répondent à vos besoins. Ensemble, nous pouvons créer
+              un impact significatif tout en propulsant votre entreprise vers de nouveaux sommets.</p>
+            <a class="cta-btn" href="#services">Découvrez nos services</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-background">
+        <img src="assets/img/cta-bg.jpg" alt="Background Image" class="img-fluid">
+      </div>
+    </section><!-- /Call To Action Section -->
     <!-- Services Section -->
     <section id="services" class="services section">
 
@@ -241,26 +277,6 @@
 
     </section>
     <!-- /Services Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10 text-center">
-            <h3>Rejoignez-nous pour transformer votre entreprise !</h3>
-            <p>Explorez nos solutions innovantes et durables qui répondent à vos besoins. Ensemble, nous pouvons créer
-              un impact significatif tout en propulsant votre entreprise vers de nouveaux sommets.</p>
-            <a class="cta-btn" href="services.html">Découvrez nos services</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="cta-background">
-        <img src="assets/img/cta-bg.jpg" alt="Background Image" class="img-fluid">
-      </div>
-    </section><!-- /Call To Action Section -->
-
     <!-- Features Section -->
     <section id="features" class="features section">
       <div class="container">
@@ -342,7 +358,6 @@
               <h4>Optimisez votre confort<br>avec Pytheas</h4>
               <p>Notre mission est de vous fournir des solutions de réfrigération et de climatisation respectueuses de
                 l'environnement. Faites confiance à notre expertise pour un confort durable et efficace.</p>
-              <a href="services.html" class="btn-get-started">Commencer</a>
             </div>
           </div>
         </div>
@@ -401,12 +416,10 @@
           </div>
 
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contact</h4>
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p>United States</p>
-            <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <h4><strong>Contact</strong></h4>
+            <p><strong>Tunis, Tunisie</strong></p>
+            <p class="mt-4"><strong>Telephone:</strong> <span>+216 29 706 959</span></p>
+            <p><strong>Email:</strong> <span>contact@pytheas-engineering-environnement.com</span></p>
           </div>
 
         </div>
@@ -417,6 +430,7 @@
     </div>
 
   </footer>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
@@ -436,7 +450,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/translation.js"></script>
 </body>
 
 </html>

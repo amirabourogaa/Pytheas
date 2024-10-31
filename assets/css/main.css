@@ -12,40 +12,39 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Montserrat",  sans-serif;
-  --nav-font: "Raleway",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Montserrat", sans-serif;
+  --nav-font: "Raleway", sans-serif;
 }
-
-:root { 
-  --background-color: #ffffff; /* Couleur de fond globale */
-  --default-color: #808080; /* Couleur de texte "engineering" */
-  --heading-color: #000000; /* Couleur noire pour les titres */
-  --accent-color: #9c7d37; /* Couleur dorée pour l'accent */
-  --surface-color: #ffffff; /* Couleur des éléments de surface */
-  --contrast-color: #ffffff; /* Couleur de contraste */
+:root {
+  --background-color: #ffffff; /* Fond global */
+  --default-color: #6E5E32; /* Texte "engineering" */
+  --heading-color: #342733; /* Titres */
+  --accent-color: #B979AC; /* Accent */
+  --surface-color: #ffffff; /* Éléments de surface */
+  --contrast-color: #342733; /* Couleur de contraste */
 }
 
 :root {
-  --nav-background-color: #1b2f45; /* Fond foncé du menu de navigation */
-  --nav-color: #ffffff;  /* Blanc pour le texte du menu */
-  --nav-hover-color: #9c7d37; /* Doré au survol des liens */
-  --nav-mobile-background-color: #1b2f45; /* Fond du menu mobile foncé */
-  --nav-dropdown-background-color: #1b2f45; /* Fond des éléments dropdown */
-  --nav-dropdown-color: #ffffff; /* Blanc pour les liens dans le dropdown */
-  --nav-dropdown-hover-color: #9c7d37; /* Doré au survol dans le dropdown */
+  --nav-background-color: #342733; /* Fond du menu de navigation */
+  --nav-color: #ffffff; /* Texte du menu */
+  --nav-hover-color: #B979AC; /* Survol des liens */
+  --nav-mobile-background-color: #342733; /* Fond du menu mobile */
+  --nav-dropdown-background-color: #342733; /* Fond des éléments dropdown */
+  --nav-dropdown-color: #ffffff; /* Liens dans le dropdown */
+  --nav-dropdown-hover-color: #B979AC; /* Survol dans le dropdown */
 }
 
 .light-background {
-  --background-color: #f6fcfe;
+  --background-color: #ffffff; /* Fond blanc */
   --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #17283b;
+  --background-color: #342733;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #254160;
+  --surface-color: #6E5E32;
   --contrast-color: #ffffff;
 }
 
@@ -53,6 +52,7 @@
 :root {
   scroll-behavior: smooth;
 }
+
 
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
@@ -2442,4 +2442,42 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+
+.button-style {
+  appearance: none;
+  /* Removes default arrow */
+  background-color: var(--accent-color);
+  /* Button color */
+  color: #fff;
+  /* Text color */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.button-style:hover {
+  background-color: #342733;
+  /* Darker shade on hover */
+}
+
+.button-style:focus {
+  box-shadow: 0 0 5px #342733;
+  /* Light blue glow on focus */
+}
+
+/* Add custom arrow */
+.button-style::after {
+  content: '▼';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10px;
+  pointer-events: none;
 }
