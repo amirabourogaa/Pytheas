@@ -36,7 +36,70 @@ const translations = {
                       l’expérience et de la rigueur d’un groupe de renommée internationale.`,
             },
 
-        }
+        },
+        call_to_action: {
+            title: "Rejoignez-nous pour transformer votre entreprise !",
+            paragraph: "Explorez nos solutions innovantes et durables qui répondent à vos besoins. Ensemble, nous pouvons créer un impact significatif tout en propulsant votre entreprise vers de nouveaux sommets.",
+            button: "Découvrez nos services"
+          },
+          services_section: {
+            title: "Nos Services",
+            paragraph: "Vente, maintenance et services pour vos besoins en réfrigération et énergies renouvelables.",
+            service1: {
+              title: "Réfrigération Industrielle",
+              description: "Vente et maintenance de matériels de réfrigération incluant chambres froides, réfrigérateurs et climatiseurs. Des solutions pour répondre aux besoins des professionnels et des particuliers."
+            },
+            service2: {
+              title: "Énergie Photovoltaïque",
+              description: "Fourniture et installation de panneaux solaires pour une énergie renouvelable et durable. Offrant des solutions adaptées aux particuliers et aux entreprises."
+            },
+            service3: {
+              title: "Ventilation et Chauffage",
+              description: "Solutions de ventilation et de chauffage performantes, incluant des systèmes de pompe à chaleur pour garantir le confort thermique de vos installations."
+            },
+            service4: {
+              title: "Contrôles de Sécurité",
+              description: "Réalisation de contrôles annuels de sécurité et d’efficacité énergétique pour garantir le bon fonctionnement de vos installations."
+            },
+            service5: {
+              title: "Maintenance Continue",
+              description: "Une présence continue pour assurer une maintenance optimale de vos équipements, garantissant leur performance et leur durabilité."
+            }
+          },
+          features_section: {
+            title1: "Des fonctionnalités puissantes pour",
+            title2: "votre confort écologique",
+            features: [
+              "Solutions de réfrigération écologiques",
+              "Intégration d'énergies renouvelables",
+              "Maintenance proactive et efficace",
+              "Solutions sécurisées et fiables",
+              "Conformité avec les normes environnementales",
+              "Équipements à haute efficacité énergétique",
+              "Équipe d'experts dédiée à votre service",
+              "Assistance client 24/7"
+            ],
+            details_title: "Optimisez votre confort<br>avec Pytheas",
+            details_paragraph: "Notre mission est de vous fournir des solutions de réfrigération et de climatisation respectueuses de l'environnement. Faites confiance à notre expertise pour un confort durable et efficace."
+          },
+          footer: {
+            sitename: "Pytheas Environnement",
+            about_text: "Pytheas, votre partenaire pour des solutions de réfrigération, climatisation, et énergies renouvelables fiables. Nous proposons des installations performantes et assurons une maintenance régulière pour garantir sécurité et efficacité énergétique à long terme.",
+            pages_title: "Nos pages",
+            pages: ["Accueil", "A propos", "Services", "Produits", "Contact"],
+            services_title: "Nos Services",
+            services: [
+              "Réfrigération Industrielle",
+              "Énergie Photovoltaïque",
+              "Ventilation et Chauffage",
+              "Contrôles de Sécurité",
+              "Maintenance Continue"
+            ],
+            contact_title: "Contact",
+            contact_location: "Tunis, Tunisie",
+            contact_phone: "+216 29 706 959",
+            contact_email: "contact@pytheas-environnement.com"
+          }
     },
     en: {
         nav_home: "Home",
@@ -77,7 +140,72 @@ const translations = {
                             requirements. With PYTHEAS Environment, you benefit from the experience and rigor of a globally recognized group.`,
             }
 
-        }
+        },
+        call_to_action: {
+            title: "Join us to transform your business!",
+            paragraph: "Explore our innovative and sustainable solutions that meet your needs. Together, we can create a significant impact while taking your business to new heights.",
+            button: "Discover our services"
+          },
+          services_section: {
+            title: "Our Services",
+            paragraph: "Sales, maintenance, and services for your refrigeration and renewable energy needs.",
+            service1: {
+              title: "Industrial Refrigeration",
+              description: "Sales and maintenance of refrigeration equipment including cold rooms, refrigerators, and air conditioners. Solutions to meet the needs of both professionals and individuals."
+            },
+            service2: {
+              title: "Photovoltaic Energy",
+              description: "Supply and installation of solar panels for renewable and sustainable energy. Offering solutions tailored to individuals and businesses."
+            },
+            service3: {
+              title: "Ventilation and Heating",
+              description: "High-performance ventilation and heating solutions, including heat pump systems to ensure the thermal comfort of your installations."
+            },
+            service4: {
+              title: "Safety Inspections",
+              description: "Annual safety and energy efficiency inspections to ensure the proper functioning of your installations."
+            },
+            service5: {
+              title: "Continuous Maintenance",
+              description: "Continuous support to ensure optimal maintenance of your equipment, guaranteeing performance and durability."
+            }
+          },
+          features_section: {
+            title1: "Powerful features for",
+            title2: "your ecological comfort",
+            features: [
+              "Eco-friendly refrigeration solutions",
+              "Renewable energy integration",
+              "Proactive and efficient maintenance",
+              "Secure and reliable solutions",
+              "Compliance with environmental standards",
+              "High energy efficiency equipment",
+              "Dedicated expert team at your service",
+              "24/7 customer support"
+            ],
+            details_title: "Optimize your comfort<br>with Pytheas",
+            details_paragraph: "Our mission is to provide you with environmentally friendly refrigeration and air conditioning solutions. Trust our expertise for durable and efficient comfort."
+          
+        },
+        footer: {
+            sitename: "Pytheas Environment",
+            about_text: "Pytheas, your partner for reliable refrigeration, air conditioning, and renewable energy solutions. We provide efficient installations and regular maintenance to ensure long-term safety and energy efficiency.",
+            pages_title: "Our Pages",
+            pages: ["Home", "About", "Services", "Products", "Contact"],
+            services_title: "Our Services",
+            services: [
+              "Industrial Refrigeration",
+              "Photovoltaic Energy",
+              "Ventilation and Heating",
+              "Safety Controls",
+              "Continuous Maintenance"
+            ],
+            contact_title: "Contact",
+            contact_location: "Tunis, Tunisia",
+            contact_phone: "+216 29 706 959",
+            contact_email: "contact@pytheas-environment.com"
+          }
+        
     },
 
 
@@ -111,6 +239,55 @@ function translateContent() {
     document.getElementById("why-elem3-title").textContent = translations[selectedLanguage].why_us_section.element3.title;
     document.getElementById("why-elem3-subtitle").textContent = translations[selectedLanguage].why_us_section.element3.subtitle;
     document.getElementById("why-elem3-paragraph").textContent = translations[selectedLanguage].why_us_section.element3.paragraph;
+
+document.getElementById("cta-title").textContent = translations[selectedLanguage].call_to_action.title;
+document.getElementById("cta-paragraph").textContent = translations[selectedLanguage].call_to_action.paragraph;
+document.getElementById("cta-button").textContent = translations[selectedLanguage].call_to_action.button;
+
+
+document.getElementById("services-title").textContent = translations[selectedLanguage].services_section.title;
+document.getElementById("services-paragraph").textContent = translations[selectedLanguage].services_section.paragraph;
+document.getElementById("service1-title").textContent = translations[selectedLanguage].services_section.service1.title;
+document.getElementById("service1-description").textContent = translations[selectedLanguage].services_section.service1.description;
+document.getElementById("service2-title").textContent = translations[selectedLanguage].services_section.service2.title;
+document.getElementById("service2-description").textContent = translations[selectedLanguage].services_section.service2.description;
+document.getElementById("service3-title").textContent = translations[selectedLanguage].services_section.service3.title;
+document.getElementById("service3-description").textContent = translations[selectedLanguage].services_section.service3.description;
+document.getElementById("service4-title").textContent = translations[selectedLanguage].services_section.service4.title;
+document.getElementById("service4-description").textContent = translations[selectedLanguage].services_section.service4.description;
+document.getElementById("service5-title").textContent = translations[selectedLanguage].services_section.service5.title;
+document.getElementById("service5-description").textContent = translations[selectedLanguage].services_section.service5.description;
+
+
+document.getElementById("features-title-1").textContent = translations[selectedLanguage].features_section.title1;
+document.getElementById("features-title-2").textContent = translations[selectedLanguage].features_section.title2;
+
+translations[selectedLanguage].features_section.features.forEach((text, index) => {
+  document.getElementById(`feature-${index + 1}`).textContent = text;
+});
+
+document.getElementById("details-title").innerHTML = translations[selectedLanguage].features_section.details_title;
+document.getElementById("details-paragraph").textContent = translations[selectedLanguage].features_section.details_paragraph;
+
+// Pied de page
+document.getElementById("sitename").textContent = translations[selectedLanguage].footer.sitename;
+document.getElementById("about-text").textContent = translations[selectedLanguage].footer.about_text;
+
+document.getElementById("pages-title").textContent = translations[selectedLanguage].footer.pages_title;
+translations[selectedLanguage].footer.pages.forEach((text, index) => {
+  document.getElementById(`page-${["home", "about", "services", "products", "contact"][index]}`).textContent = text;
+});
+
+document.getElementById("services-title").textContent = translations[selectedLanguage].footer.services_title;
+translations[selectedLanguage].footer.services.forEach((text, index) => {
+  document.getElementById(`service-${index + 1}`).textContent = text;
+});
+
+document.getElementById("contact-title").textContent = translations[selectedLanguage].footer.contact_title;
+document.getElementById("contact-location").textContent = translations[selectedLanguage].footer.contact_location;
+document.getElementById("contact-phone").textContent = translations[selectedLanguage].footer.contact_phone;
+document.getElementById("contact-email").textContent = translations[selectedLanguage].footer.contact_email;
+
 
 }
 

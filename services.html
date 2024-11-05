@@ -47,21 +47,29 @@
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Accueil<br></a></li>
-          <li><a href="about.html">A propos</a></li>
-          <li><a href="services.html" class="active">Services</a></li>
-          <li><a href="portfolio.html">Portefeuille</a></li>
-
-          <li><a href="contact.html">Contact</a></li>
           <li>
-            <select id="languageSelector" class="button-style" onchange="translateContent()">
+            <a href="index.html" id="nav-home">Accueil<br /></a>
+          </li>
+          <li>
+            <a href="about.html"  id="nav-about">A propos</a>
+          </li>
+          <li><a href="services.html" class="active" id="nav-services">Services</a></li>
+          <li><a href="portfolio.html" id="nav-products">Portefeuille</a></li>
+          <li><a href="contact.html" id="nav-contact">Contact</a></li>
+
+          <!-- Sélecteur de langue intégré dans le menu -->
+          <li>
+            <select
+              id="languageSelector"
+              class="button-style"
+              onchange="translateContent()"
+            >
               <option value="fr">Français</option>
               <option value="en">English</option>
             </select>
           </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        
       </nav>
 
     </div>
@@ -69,222 +77,249 @@
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade"
-      style="background-image: url(assets/img/services-page-title-bg.jpg);">
-      <div class="container">
-        <h1>Services</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Services</li>
-          </ol>
-        </nav>
+  <!-- Page Title -->
+<div class="page-title dark-background" data-aos="fade"
+style="background-image: url(assets/img/services-page-title-bg.jpg);">
+<div class="container">
+  <h1 id="page-title">Services</h1>
+  <nav class="breadcrumbs">
+    <ol>
+      <li><a href="index.html" id="breadcrumb-home">Home</a></li>
+      <li id="breadcrumb-current" class="current">Services</li>
+    </ol>
+  </nav>
+</div>
+</div>
+<!-- End Page Title -->
+
+<!-- Services Section -->
+<section id="services" class="services section">
+<div class="container section-title" data-aos="fade-up">
+  <h2 id="services-title">Nos Services</h2>
+  <p id="services-description">Vente, maintenance et services pour vos besoins en réfrigération et énergies renouvelables.</p>
+</div>
+
+<div class="container">
+  <div class="row gy-4">
+
+    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+      <div class="icon flex-shrink-0"><i class="bi bi-thermometer-snow" style="color: #f57813;"></i></div>
+      <div>
+        <h4 id="service1-title" class="title">Réfrigération Industrielle</h4>
+        <p id="service1-description" class="description">Vente et maintenance de matériels de réfrigération incluant chambres froides, réfrigérateurs et climatiseurs. Des solutions pour répondre aux besoins des professionnels et des particuliers.</p>
       </div>
-    </div><!-- End Page Title -->
+    </div>
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
+    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+      <div class="icon flex-shrink-0"><i class="bi bi-brightness-alt-high" style="color: #15a04a;"></i></div>
+      <div>
+        <h4 id="service2-title" class="title">Énergie Photovoltaïque</h4>
+        <p id="service2-description" class="description">Fourniture et installation de panneaux solaires pour une énergie renouvelable et durable. Offrant des solutions adaptées aux particuliers et aux entreprises.</p>
+      </div>
+    </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Nos Services</h2>
-        <p>Vente, maintenance et services pour vos besoins en réfrigération et énergies renouvelables.</p>
-      </div><!-- End Section Title -->
-    
-      <div class="container">
-        <div class="row gy-4">
-    
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-thermometer-snow" style="color: #f57813;"></i></div>
-            <div>
-              <h4 class="title">Réfrigération Industrielle</h4>
-              <p class="description">Vente et maintenance de matériels de réfrigération incluant chambres froides, réfrigérateurs et climatiseurs. Des solutions pour répondre aux besoins des professionnels et des particuliers.</p>
+    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+      <div class="icon flex-shrink-0"><i class="bi bi-wind" style="color: #d90769;"></i></div>
+      <div>
+        <h4 id="service3-title" class="title">Ventilation et Chauffage</h4>
+        <p id="service3-description" class="description">Solutions de ventilation et de chauffage performantes, incluant des systèmes de pompe à chaleur pour garantir le confort thermique de vos installations.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+      <div class="icon flex-shrink-0"><i class="bi bi-shield-check" style="color: #15bfbc;"></i></div>
+      <div>
+        <h4 id="service4-title" class="title">Contrôles de Sécurité</h4>
+        <p id="service4-description" class="description">Réalisation de contrôles annuels de sécurité et d’efficacité énergétique pour garantir le bon fonctionnement de vos installations.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+      <div class="icon flex-shrink-0"><i class="bi bi-hammer" style="color: #f5cf13;"></i></div>
+      <div>
+        <h4 id="service5-title" class="title">Maintenance Continue</h4>
+        <p id="service5-description" class="description">Une présence continue pour assurer une maintenance optimale de vos équipements, garantissant leur performance et leur durabilité.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</section>
+<!-- /Services Section -->
+
+   <!-- Service Cards Section -->
+<section id="service-cards" class="service-cards section">
+  <div class="container-fluid">
+    <div class="row gy-4">
+      
+      <!-- Vente et Installation de Réfrigération -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-item">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="card-bg">
+                <img src="assets/img/portfolio/3.jpg" alt="Service de réfrigération">
+              </div>
             </div>
-          </div><!-- End Service Item -->
-    
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-brightness-alt-high" style="color: #15a04a;"></i></div>
-            <div>
-              <h4 class="title">Énergie Photovoltaïque</h4>
-              <p class="description">Fourniture et installation de panneaux solaires pour une énergie renouvelable et durable. Offrant des solutions adaptées aux particuliers et aux entreprises.</p>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title" id="service-card-title-1">Installations de chambres frigorifiques</h4>
+                <p id="service-card-text-1">Nos équipes sont formées pour gérer tous types d'installations de climatiseurs et de chambres frigorifiques, que ce soit pour des particuliers ou des professionnels. Cela inclut l'installation de pompes à chaleur, de centrales de traitement d’air et de groupes d’eau glacée.</p>
+              </div>
             </div>
-          </div><!-- End Service Item -->
-    
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-wind" style="color: #d90769;"></i></div>
-            <div>
-              <h4 class="title">Ventilation et Chauffage</h4>
-              <p class="description">Solutions de ventilation et de chauffage performantes, incluant des systèmes de pompe à chaleur pour garantir le confort thermique de vos installations.</p>
-            </div>
-          </div><!-- End Service Item -->
-    
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-shield-check" style="color: #15bfbc;"></i></div>
-            <div>
-              <h4 class="title">Contrôles de Sécurité</h4>
-              <p class="description">Réalisation de contrôles annuels de sécurité et d’efficacité énergétique pour garantir le bon fonctionnement de vos installations.</p>
-            </div>
-          </div><!-- End Service Item -->
-    
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-hammer" style="color: #f5cf13;"></i></div>
-            <div>
-              <h4 class="title">Maintenance Continue</h4>
-              <p class="description">Une présence continue pour assurer une maintenance optimale de vos équipements, garantissant leur performance et leur durabilité.</p>
-            </div>
-          </div><!-- End Service Item -->
-    
+          </div>
         </div>
       </div>
-    
-    </section><!-- /Services Section -->
 
-    <!-- Service Cards Section -->
-    <section id="service-cards" class="service-cards section">
-      <div class="container-fluid">
-        <div class="row gy-4">
-          
-          <!-- Vente et Installation de Réfrigération -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg">
-                    <!-- Photo a changer  -->
-                    <img src="assets/img/portfolio/3.jpg" alt="Service de réfrigération"></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Installations de chambres frigorifiques</h4>
-                    <p>Nos équipes sont formées pour gérer tous types d'installations de climatiseurs et de chambres frigorifiques, que ce soit pour des particuliers ou des professionnels. Cela inclut l'installation de pompes à chaleur, de centrales de traitement d’air et de groupes d’eau glacée.</p>
-                  </div>
-                </div>
+      <!-- Énergies Renouvelables et Photovoltaïque -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-item">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="card-bg"><img src="assets/img/solar-panels.jfif" alt="Énergies renouvelables"></div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title" id="service-card-title-2">Énergies Renouvelables et Photovoltaïque</h4>
+                <p id="service-card-text-2">Nous offrons des solutions de panneaux solaires et systèmes photovoltaïques, permettant une source d'énergie propre et durable pour les bâtiments résidentiels et commerciaux.</p>
               </div>
             </div>
           </div>
-    
-          <!-- Énergies Renouvelables et Photovoltaïque -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/solar-panels.jfif" alt="Énergies renouvelables"></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Énergies Renouvelables et Photovoltaïque</h4>
-                    <p>Nous offrons des solutions de panneaux solaires et systèmes photovoltaïques, permettant une source d'énergie propre et durable pour les bâtiments résidentiels et commerciaux.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-          <!-- Ventilation et Chauffage -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/ventilation-heating.jfif" alt="Ventilation et chauffage"></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Ventilation et Chauffage</h4>
-                    <p>Nos systèmes de ventilation et de chauffage à haute efficacité assurent un confort thermique optimal, incluant des pompes à chaleur pour des économies d'énergie.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-          <!-- Maintenance et Contrôle de Sécurité -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/portfolio/8.jpg" alt="Maintenance et contrôle de sécurité"></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Maintenance et Contrôle de Sécurité</h4>
-                    <p>Nous assurons des contrôles de sécurité annuels et une maintenance régulière pour garantir une performance optimale et durable de vos équipements.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    
         </div>
       </div>
-    </section>
-    
-    <!-- /Service Cards Section -->
+
+      <!-- Ventilation et Chauffage -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-item">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="card-bg"><img src="assets/img/ventilation-heating.jfif" alt="Ventilation et chauffage"></div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title" id="service-card-title-3">Ventilation et Chauffage</h4>
+                <p id="service-card-text-3">Nos systèmes de ventilation et de chauffage à haute efficacité assurent un confort thermique optimal, incluant des pompes à chaleur pour des économies d'énergie.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maintenance et Contrôle de Sécurité -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="card-item">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="card-bg"><img src="assets/img/portfolio/8.jpg" alt="Maintenance et contrôle de sécurité"></div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title" id="service-card-title-4">Maintenance et Contrôle de Sécurité</h4>
+                <p id="service-card-text-4">Nous assurons des contrôles de sécurité annuels et une maintenance régulière pour garantir une performance optimale et durable de vos équipements.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /Service Cards Section -->
+
 
 
   </main>
- 
-  <footer id="footer" class="footer light-background">
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">Pytheas Environnement</span>
-            </a>
-            <p>Pytheas, votre partenaire pour des solutions de réfrigération, climatisation, et énergies
-              renouvelables fiables. Nous proposons des installations performantes et assurons une maintenance régulière
-              pour garantir sécurité et efficacité énergétique à long terme.</p>
+    <!-- Footer Section -->
+    <footer id="footer" class="footer light-background">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <!-- Section À propos -->
+            <div class="col-lg-5 col-md-12 footer-about">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span id="sitename">Pytheas Environnement</span>
+              </a>
+              <p id="about-text">
+                Pytheas, votre partenaire pour des solutions de réfrigération,
+                climatisation, et énergies renouvelables fiables. Nous proposons
+                des installations performantes et assurons une maintenance
+                régulière pour garantir sécurité et efficacité énergétique à
+                long terme.
+              </p>
 
-            <div class="social-links d-flex mt-4">
-              <a href="https://twitter.com/EcoFroidSolutions" target="_blank"><i class="bi bi-twitter"></i></a>
-              <a href="https://facebook.com/EcoFroidSolutions" target="_blank"><i class="bi bi-facebook"></i></a>
-              <a href="https://instagram.com/EcoFroidSolutions" target="_blank"><i class="bi bi-instagram"></i></a>
-              <a href="https://linkedin.com/company/EcoFroidSolutions" target="_blank"><i
-                  class="bi bi-linkedin"></i></a>
+              <div class="social-links d-flex mt-4">
+                <a href="https://twitter.com/EcoFroidSolutions" target="_blank"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+                <a href="https://facebook.com/EcoFroidSolutions" target="_blank"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a
+                  href="https://instagram.com/EcoFroidSolutions"
+                  target="_blank"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a
+                  href="https://linkedin.com/company/EcoFroidSolutions"
+                  target="_blank"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Section Nos pages -->
+            <div class="col-lg-2 col-6 footer-links">
+              <h4 id="pages-title">Nos pages</h4>
+              <ul>
+                <li id="page-home">Accueil</li>
+                <li id="page-about">A propos</li>
+                <li id="page-services">Services</li>
+                <li id="page-products">Produits</li>
+                <li id="page-contact">Contact</li>
+              </ul>
+            </div>
+
+            <!-- Section Nos Services -->
+            <div class="col-lg-2 col-6 footer-links">
+              <h4 id="services-title">Nos Services</h4>
+              <ul>
+                <li id="service-1">Réfrigération Industrielle</li>
+                <li id="service-2">Énergie Photovoltaïque</li>
+                <li id="service-3">Ventilation et Chauffage</li>
+                <li id="service-4">Contrôles de Sécurité</li>
+                <li id="service-5">Maintenance Continue</li>
+              </ul>
+            </div>
+
+            <!-- Section Contact -->
+            <div
+              class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+            >
+              <h4 id="contact-title"><strong>Contact</strong></h4>
+              <p id="contact-location"><strong>Tunis, Tunisie</strong></p>
+              <p class="mt-4">
+                <strong>Telephone:</strong>
+                <a
+                  href="https://wa.me/21629706959"
+                  target="_blank"
+                  id="contact-phone"
+                  >+216 29 706 959</a
+                >
+              </p>
+              <p>
+                <strong>Email:</strong>
+                <span id="contact-email"
+                  >contact@pytheas-environnement.com</span
+                >
+              </p>
             </div>
           </div>
-
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Nos pages</h4>
-            <ul>
-              <li>Accueil</li>
-              <li>A propos</li>
-              <li>Services</li>
-              <li>Produits</li>
-              <li>Contact</li>
-
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Nos Services</h4>
-            <ul>
-              <li> Réfrigération Industrielle</li>
-              <li> Énergie Photovoltaïque</li>
-              <li> Ventilation et Chauffage</li>
-              <li> Contrôles de Sécurité</li>
-              <li> Maintenance Continue</li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4><strong>Contact</strong></h4>
-            <p><strong>Tunis, Tunisie</strong></p>
-            <p class="mt-4"><strong>Telephone:</strong> <span>+216 29 706 959</span></p>
-            <p><strong>Email:</strong> <span>contact@pytheas-environnement.com</span></p>
-          </div>
-
         </div>
       </div>
-    </div>
-
-
-    </div>
-
-  </footer>
+    </footer>
 
 
 
@@ -307,7 +342,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+<script src="assets/js/translation-services.js"></script>
 </body>
 
 </html>
