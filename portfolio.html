@@ -46,18 +46,27 @@
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" >Accueil<br></a></li>
-          <li><a href="about.html">A propos</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html" class="active">Portefeuille</a></li>
-         
-        <li><a href="contact.html" >Contact</a></li>
-        <li>
-          <select id="languageSelector" class="button-style" onchange="translateContent()">
-            <option value="fr">Français</option>
-            <option value="en">English</option>
-          </select>
-        </li>
+          <li>
+            <a href="index.html" id="nav-home">Accueil<br /></a>
+          </li>
+          <li>
+            <a href="about.html"  id="nav-about">A propos</a>
+          </li>
+          <li><a href="services.html"  id="nav-services">Services</a></li>
+          <li><a href="portfolio.html" class="active" id="nav-products">Portefeuille</a></li>
+          <li><a href="contact.html" id="nav-contact">Contact</a></li>
+
+          <!-- Sélecteur de langue intégré dans le menu -->
+          <li>
+            <select
+              id="languageSelector"
+              class="button-style"
+              onchange="translateContent()"
+            >
+              <option value="fr">Français</option>
+              <option value="en">English</option>
+            </select>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -199,70 +208,94 @@
 
   </main>
 
-  <footer id="footer" class="footer light-background">
+ <!-- Footer Section -->
+ <footer id="footer" class="footer light-background">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- Section À propos -->
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span id="sitename">Pytheas Environnement</span>
+          </a>
+          <p id="about-text">
+            Pytheas, votre partenaire pour des solutions de réfrigération,
+            climatisation, et énergies renouvelables fiables. Nous proposons
+            des installations performantes et assurons une maintenance
+            régulière pour garantir sécurité et efficacité énergétique à
+            long terme.
+          </p>
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">Pytheas Environnement</span>
-            </a>
-            <p>Pytheas, votre partenaire pour des solutions de réfrigération, climatisation, et énergies
-              renouvelables fiables. Nous proposons des installations performantes et assurons une maintenance régulière
-              pour garantir sécurité et efficacité énergétique à long terme.</p>
-
-            <div class="social-links d-flex mt-4">
-              <a href="https://twitter.com/EcoFroidSolutions" target="_blank"><i class="bi bi-twitter"></i></a>
-              <a href="https://facebook.com/EcoFroidSolutions" target="_blank"><i class="bi bi-facebook"></i></a>
-              <a href="https://instagram.com/EcoFroidSolutions" target="_blank"><i class="bi bi-instagram"></i></a>
-              <a href="https://linkedin.com/company/EcoFroidSolutions" target="_blank"><i
-                  class="bi bi-linkedin"></i></a>
-            </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://twitter.com/EcoFroidSolutions" target="_blank"
+              ><i class="bi bi-twitter"></i
+            ></a>
+            <a href="https://facebook.com/EcoFroidSolutions" target="_blank"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a
+              href="https://instagram.com/EcoFroidSolutions"
+              target="_blank"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a
+              href="https://linkedin.com/company/EcoFroidSolutions"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i
+            ></a>
           </div>
+        </div>
 
+        <!-- Section Nos pages -->
+        <div class="col-lg-2 col-6 footer-links">
+          <h4 id="pages-title">Nos pages</h4>
+          <ul>
+            <li id="page-home">Accueil</li>
+            <li id="page-about">A propos</li>
+            <li id="page-services">Services</li>
+            <li id="page-products">Produits</li>
+            <li id="page-contact">Contact</li>
+          </ul>
+        </div>
 
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Nos pages</h4>
-            <ul>
-              <li>Accueil</li>
-              <li>A propos</li>
-              <li>Services</li>
-              <li>Produits</li>
-              <li>Contact</li>
+        <!-- Section Nos Services -->
+        <div class="col-lg-2 col-6 footer-links">
+          <h4 id="services-title">Nos Services</h4>
+          <ul>
+            <li id="service-1">Réfrigération Industrielle</li>
+            <li id="service-2">Énergie Photovoltaïque</li>
+            <li id="service-3">Ventilation et Chauffage</li>
+            <li id="service-4">Contrôles de Sécurité</li>
+            <li id="service-5">Maintenance Continue</li>
+          </ul>
+        </div>
 
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Nos Services</h4>
-            <ul>
-              <li> Réfrigération Industrielle</li>
-              <li> Énergie Photovoltaïque</li>
-              <li> Ventilation et Chauffage</li>
-              <li> Contrôles de Sécurité</li>
-              <li> Maintenance Continue</li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4><strong>Contact</strong></h4>
-            <p><strong>Tunis, Tunisie</strong></p>
-            <p class="mt-4"><strong>Telephone:</strong> 
-    <a href="https://wa.me/21629706959" target="_blank">+216 29 706 959</a>
-</p>
-            <p><strong>Email:</strong> <span>contact@pytheas-environnement.com</span></p>
-          </div>
-
+        <!-- Section Contact -->
+        <div
+          class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+        >
+          <h4 id="contact-title"><strong>Contact</strong></h4>
+          <p id="contact-location"><strong>Tunis, Tunisie</strong></p>
+          <p class="mt-4">
+            <strong>Telephone:</strong>
+            <a
+              href="https://wa.me/21629706959"
+              target="_blank"
+              id="contact-phone"
+              >+216 29 706 959</a
+            >
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <span id="contact-email"
+              >contact@pytheas-environnement.com</span
+            >
+          </p>
         </div>
       </div>
     </div>
-
-
-    </div>
-
-  </footer>
-
+  </div>
+</footer>
 
 
   <!-- Scroll Top -->
@@ -282,7 +315,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+<script src="assets/js/translation-portfolio.js"></script>
 </body>
 
 </html>
