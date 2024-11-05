@@ -18,17 +18,14 @@ const translations = {
             element1: {
                 title: "PYTHEAS Environnement, un leader en froid industriel et énergies renouvelables",
                 subtitle: "20 ans après la création de PYTHEAS Engineering, le groupe poursuit son expansion.",
-                paragraph: `Installée en Tunisie, PYTHEAS Environnement se spécialise dans le froid industriel et les
-                      solutions d'énergie renouvelable, en collaboration avec des fabricants français de matériel
-                      reconnu pour sa haute performance et ses garanties. Que vous soyez professionnel ou particulier,
-                      nos produits répondent à vos besoins, de la chambre froide au climatiseur domestique en passant
-                      par les panneaux photovoltaïques.`,
+                paragraph: `Domiciliée en Tunisie, PYTHEAS Environnement se spécialise dans le froid industriel et les solutions d'énergie renouvelable, en collaboration avec des fabricants de matériel français de haute performance et garantie. Que vous soyez professionnel ou particulier, nos produits répondent à vos besoins, de la chambre froide au climatiseur domestique en passant par les panneaux photovoltaïques.`,
             },
             element2: {
                 title: "Produits de qualité pour répondre à tous vos besoins",
                 subtitle: "Des solutions adaptées aux professionnels comme aux particuliers.",
-                paragraph: `Nous offrons une gamme de produits variée : chambres froides, climatisation pour appartements, et
-                      installations de panneaux photovoltaïques. PYTHEAS Environnement vous accompagne dans vos choix
+                paragraph: `Nous offrons une gamme variée de produits: chambres froides,
+                      climatisation, et installations de panneaux photovoltaïques. 
+                      PYTHEAS Environnement vous accompagne dans vos choix
                       avec l’expertise d’un groupe international, garantissant performance et durabilité.`,
             },
             element3: {
