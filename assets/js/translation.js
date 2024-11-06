@@ -276,7 +276,7 @@ translations[selectedLanguage].footer.pages.forEach((text, index) => {
   document.getElementById(`page-${["home", "about", "services", "products", "contact"][index]}`).textContent = text;
 });
 
-document.getElementById("services-title").textContent = translations[selectedLanguage].footer.services_title;
+document.getElementById("services-title-footer").textContent = translations[selectedLanguage].footer.services_title;
 translations[selectedLanguage].footer.services.forEach((text, index) => {
   document.getElementById(`service-${index + 1}`).textContent = text;
 });
