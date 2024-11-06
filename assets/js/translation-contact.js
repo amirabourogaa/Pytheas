@@ -16,7 +16,7 @@ const translations = {
           addressTitle: "Adresse",
           address: "Tunis, Tunisie",
           phoneTitle: "Appelez-nous",
-          phoneNumber: "+216 29 706 959",
+         
           emailTitle: "Email:",
           email: "contact@pytheas-environnement.com"
         },
@@ -64,7 +64,7 @@ const translations = {
           addressTitle: "Address",
           address: "Tunis, Tunisia",
           phoneTitle: "Call us",
-          phoneNumber: "+216 29 706 959",
+        
           emailTitle: "Email:",
           email: "contact@pytheas-environnement.com"
         },
@@ -117,7 +117,6 @@ function translateContent() {
  document.getElementById('contact-address-title').innerText = contactInfo.addressTitle;
  document.getElementById('contact-address').innerText = contactInfo.address;
  document.getElementById('contact-phone-title').innerText = contactInfo.phoneTitle;
- document.getElementById('contact-phone-number').innerText = contactInfo.phoneNumber;
  document.getElementById('contact-email-title').innerText = contactInfo.emailTitle;
  document.getElementById('contact-email').innerText = contactInfo.email;
  

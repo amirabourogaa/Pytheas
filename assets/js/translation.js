@@ -97,7 +97,6 @@ const translations = {
             ],
             contact_title: "Contact",
             contact_location: "Tunis, Tunisie",
-            contact_phone: "+216 29 706 959",
             contact_email: "contact@pytheas-environnement.com"
           }
     },
@@ -202,7 +201,6 @@ const translations = {
             ],
             contact_title: "Contact",
             contact_location: "Tunis, Tunisia",
-            contact_phone: "+216 29 706 959",
             contact_email: "contact@pytheas-environment.com"
           }
         
@@ -285,7 +283,6 @@ translations[selectedLanguage].footer.services.forEach((text, index) => {
 
 document.getElementById("contact-title").textContent = translations[selectedLanguage].footer.contact_title;
 document.getElementById("contact-location").textContent = translations[selectedLanguage].footer.contact_location;
-document.getElementById("contact-phone").textContent = translations[selectedLanguage].footer.contact_phone;
 document.getElementById("contact-email").textContent = translations[selectedLanguage].footer.contact_email;
 
 
