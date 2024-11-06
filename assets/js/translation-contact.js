@@ -7,8 +7,27 @@ const translations = {
         nav_products: "Produits",
         nav_contact: "Contact",
        
-       
-       
+        pageTitle: "Contact",
+        breadcrumbs: {
+          home: "Accueil",
+          contact: "Contact"
+        },
+        contactInfo: {
+          addressTitle: "Adresse",
+          address: "Tunis, Tunisie",
+          phoneTitle: "Appelez-nous",
+          phoneNumber: "+216 29 706 959",
+          emailTitle: "Email:",
+          email: "contact@pytheas-environnement.com"
+        },
+        contactForm: {
+          namePlaceholder: "Votre nom",
+          emailPlaceholder: "Votre email",
+          subjectPlaceholder: "Sujet",
+          messagePlaceholder: "Message",
+          submitButton: "Envoyer",
+          loadingText: "Chargement",
+        },
         footer: {
             sitename: "Pytheas Environnement",
             about_text: "Pytheas, votre partenaire pour des solutions de réfrigération, climatisation, et énergies renouvelables fiables. Nous proposons des installations performantes et assurons une maintenance régulière pour garantir sécurité et efficacité énergétique à long terme.",
@@ -36,8 +55,27 @@ const translations = {
         nav_services: "Services",
         nav_products: "Products",
         nav_contact: "Contact",
-     
-     
+        pageTitle: "Contact",
+        breadcrumbs: {
+          home: "Home",
+          contact: "Contact"
+        },
+        contactInfo: {
+          addressTitle: "Address",
+          address: "Tunis, Tunisia",
+          phoneTitle: "Call us",
+          phoneNumber: "+216 29 706 959",
+          emailTitle: "Email:",
+          email: "contact@pytheas-environnement.com"
+        },
+        contactForm: {
+          namePlaceholder: "Your Name",
+          emailPlaceholder: "Your Email",
+          subjectPlaceholder: "Subject",
+          messagePlaceholder: "Message",
+          submitButton: "Send",
+          loadingText: "Loading",
+        },
         footer: {
             sitename: "Pytheas Environment",
             about_text: "Pytheas, your partner for reliable refrigeration, air conditioning, and renewable energy solutions. We provide efficient installations and regular maintenance to ensure long-term safety and energy efficiency.",
@@ -68,8 +106,30 @@ function translateContent() {
       document.getElementById("nav-products").textContent = translations[selectedLanguage].nav_products;
       document.getElementById("nav-contact").textContent = translations[selectedLanguage].nav_contact;
 
-   
+      const pageTitle = translations[selectedLanguage].pageTitle;
+      const breadcrumbs = translations[selectedLanguage].breadcrumbs;
+      document.getElementById('contact-page-title').innerText = pageTitle;
+      document.getElementById('breadcrumb-home').innerText = breadcrumbs.home;
+      document.getElementById('breadcrumb-contact').innerText = breadcrumbs.contact;
 
+      // Traductions des informations de contact
+      const contactInfo = translations[selectedLanguage].contactInfo;
+ document.getElementById('contact-address-title').innerText = contactInfo.addressTitle;
+ document.getElementById('contact-address').innerText = contactInfo.address;
+ document.getElementById('contact-phone-title').innerText = contactInfo.phoneTitle;
+ document.getElementById('contact-phone-number').innerText = contactInfo.phoneNumber;
+ document.getElementById('contact-email-title').innerText = contactInfo.emailTitle;
+ document.getElementById('contact-email').innerText = contactInfo.email;
+ 
+ // Traductions de formulaire de contact
+ const formLabels = translations[selectedLanguage].contactForm;
+
+ document.getElementById('contact-name').setAttribute('placeholder', formLabels.namePlaceholder);
+ document.getElementById('contact-email').setAttribute('placeholder', formLabels.emailPlaceholder);
+ document.getElementById('contact-subject').setAttribute('placeholder', formLabels.subjectPlaceholder);
+ document.getElementById('contact-message').setAttribute('placeholder', formLabels.messagePlaceholder);
+ document.getElementById('contact-submit-btn').innerText = formLabels.submitButton;
+ document.getElementById('loading-text').innerText = formLabels.loadingText;
 
       // Pied de page
 document.getElementById("sitename").textContent = translations[selectedLanguage].footer.sitename;

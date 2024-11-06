@@ -507,9 +507,9 @@ h6 {
   line-height: 1;
 }
 
-.footer .footer-links ul a:hover {
+/* .footer .footer-links ul a:hover {
   color: var(--accent-color);
-}
+} */
 
 .footer .footer-contact p {
   margin-bottom: 5px;
@@ -2481,3 +2481,5 @@ section,
   font-size: 10px;
   pointer-events: none;
 }
+
+

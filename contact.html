@@ -76,19 +76,20 @@
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade"
-      style="background-image: url(assets/img/contact-page-title-bg.jpg);">
-      <div class="container">
-        <h1>Contact</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Accueil</a></li>
-            <li class="current">Contact</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
+   <!-- Page Title -->
+<div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/contact-page-title-bg.jpg);">
+  <div class="container">
+    <h1 id="contact-page-title">Contact</h1>
+    <nav class="breadcrumbs">
+      <ol>
+        <li><a href="index.html" id="breadcrumb-home">Accueil</a></li>
+        <li id="breadcrumb-contact" class="current">Contact</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+<!-- End Page Title -->
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -96,65 +97,76 @@
       <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
-
           <div class="col-lg-5">
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h3>Addresse</h3>
-                <p>Tunis, Tunisie</p>
+                <h3 id="contact-address-title">Adresse</h3>
+                <p id="contact-address">Tunis, Tunisie</p>
               </div>
             </div><!-- End Info Item -->
-
+          
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0"></i>
+              <i class="bi bi-whatsapp flex-shrink-0"></i>
               <div>
-                <h3>Appelez-nous</h3>
-                <p>+216 29 706 959</p>
+                <h3 id="contact-phone-title">Appelez-nous</h3>
+               
+                <a
+                href="https://wa.me/33650412215"
+                target="_blank"
+                id="contact-phone"
+              >
+                +33 6 50 41 22 15
+              </a>
+              <span style="font-weight: bolder; color: #000;">|</span>
+              <a
+                href="https://wa.me/21629706959"
+                target="_blank"
+                id="contact-phone"
+              >
+                +216 29 706 959 
+              </a>
+          
               </div>
             </div><!-- End Info Item -->
-
+          
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
-                <h3>Email:</h3>
-                <p>contact@pytheas-environnement.com</p>
+                <h3 id="contact-email-title">Email:</h3>
+                <p id="contact-email">contact@pytheas-environnement.com</p>
               </div>
             </div><!-- End Info Item -->
-
           </div>
+          
 
           <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="500">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
               <div class="row gy-4">
-
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" id="contact-name" class="form-control" placeholder="" required="">
                 </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+          
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" id="contact-email" placeholder="" required="">
                 </div>
-
+          
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" class="form-control" name="subject" id="contact-subject" placeholder="" required="">
                 </div>
-
+          
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control" name="message" id="contact-message" rows="6" placeholder="" required=""></textarea>
                 </div>
-
+          
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-
-
-                  <button type="submit">Envoyer</button>
+                  <div class="loading" id="loading-text"></div>
+                  <button type="submit" id="contact-submit-btn"></button>
                 </div>
-
               </div>
             </form>
           </div><!-- End Contact Form -->
+          
 
         </div>
 
@@ -164,94 +176,106 @@
 
   </main>
 
- <!-- Footer Section -->
- <footer id="footer" class="footer light-background">
-  <div class="footer-top">
-    <div class="container">
-      <div class="row gy-4">
-        <!-- Section À propos -->
-        <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span id="sitename">Pytheas Environnement</span>
-          </a>
-          <p id="about-text">
-            Pytheas, votre partenaire pour des solutions de réfrigération,
-            climatisation, et énergies renouvelables fiables. Nous proposons
-            des installations performantes et assurons une maintenance
-            régulière pour garantir sécurité et efficacité énergétique à
-            long terme.
-          </p>
+  <!-- Footer Section -->
+  <footer id="footer" class="footer light-background">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Section À propos -->
+          <div class="col-lg-5 col-md-12 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span id="sitename">Pytheas Environnement</span>
+            </a>
+            <p id="about-text">
+              Pytheas, votre partenaire pour des solutions de réfrigération,
+              climatisation, et énergies renouvelables fiables. Nous proposons
+              des installations performantes et assurons une maintenance
+              régulière pour garantir sécurité et efficacité énergétique à
+              long terme.
+            </p>
 
-          <div class="social-links d-flex mt-4">
-            <a href="https://twitter.com/EcoFroidSolutions" target="_blank"
-              ><i class="bi bi-twitter"></i
-            ></a>
-            <a href="https://facebook.com/EcoFroidSolutions" target="_blank"
-              ><i class="bi bi-facebook"></i
-            ></a>
-            <a
-              href="https://instagram.com/EcoFroidSolutions"
-              target="_blank"
-              ><i class="bi bi-instagram"></i
-            ></a>
-            <a
-              href="https://linkedin.com/company/EcoFroidSolutions"
-              target="_blank"
-              ><i class="bi bi-linkedin"></i
-            ></a>
+            <div class="social-links d-flex mt-4">
+              <a href="https://twitter.com/EcoFroidSolutions" target="_blank"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a href="https://facebook.com/EcoFroidSolutions" target="_blank"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://instagram.com/EcoFroidSolutions"
+                target="_blank"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="https://linkedin.com/company/EcoFroidSolutions"
+                target="_blank"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
           </div>
-        </div>
 
-        <!-- Section Nos pages -->
-        <div class="col-lg-2 col-6 footer-links">
-          <h4 id="pages-title">Nos pages</h4>
-          <ul>
-            <li id="page-home">Accueil</li>
-            <li id="page-about">A propos</li>
-            <li id="page-services">Services</li>
-            <li id="page-products">Produits</li>
-            <li id="page-contact">Contact</li>
-          </ul>
-        </div>
+          <!-- Section Nos pages -->
+          <div class="col-lg-2 col-6 footer-links">
+            <h4 id="pages-title">Nos pages</h4>
+            <ul>
+              <li id="page-home">Accueil</li>
+              <li id="page-about">A propos</li>
+              <li id="page-services">Services</li>
+              <li id="page-products">Produits</li>
+              <li id="page-contact">Contact</li>
+            </ul>
+          </div>
 
-        <!-- Section Nos Services -->
-        <div class="col-lg-2 col-6 footer-links">
-          <h4 id="services-title">Nos Services</h4>
-          <ul>
-            <li id="service-1">Réfrigération Industrielle</li>
-            <li id="service-2">Énergie Photovoltaïque</li>
-            <li id="service-3">Ventilation et Chauffage</li>
-            <li id="service-4">Contrôles de Sécurité</li>
-            <li id="service-5">Maintenance Continue</li>
-          </ul>
-        </div>
+          <!-- Section Nos Services -->
+          <div class="col-lg-2 col-6 footer-links">
+            <h4 id="services-title">Nos Services</h4>
+            <ul>
+              <li id="service-1">Réfrigération Industrielle</li>
+              <li id="service-2">Énergie Photovoltaïque</li>
+              <li id="service-3">Ventilation et Chauffage</li>
+              <li id="service-4">Contrôles de Sécurité</li>
+              <li id="service-5">Maintenance Continue</li>
+            </ul>
+          </div>
 
-        <!-- Section Contact -->
-        <div
-          class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
-        >
-          <h4 id="contact-title"><strong>Contact</strong></h4>
-          <p id="contact-location"><strong>Tunis, Tunisie</strong></p>
-          <p class="mt-4">
-            <strong>Telephone:</strong>
-            <a
-              href="https://wa.me/21629706959"
-              target="_blank"
-              id="contact-phone"
-              >+216 29 706 959</a
-            >
-          </p>
-          <p>
-            <strong>Email:</strong>
-            <span id="contact-email"
-              >contact@pytheas-environnement.com</span
-            >
-          </p>
+          <!-- Section Contact -->
+          <div
+            class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+          >
+            <h4 id="contact-title"><strong>Contact</strong></h4>
+            <p id="contact-location"><strong>Tunis, Tunisie</strong></p>
+            <p class="mt-4">
+              <strong>Telephone:</strong><br />
+              <span><i class="bi bi-whatsapp"></i> </span>
+              <a
+                href="https://wa.me/21629706959"
+                target="_blank"
+                id="contact-phone"
+              >
+                +216 29 706 959 
+              </a>
+              <span>| <i class="bi bi-whatsapp"></i></span>
+
+              <a
+                href="https://wa.me/33650412215"
+                target="_blank"
+                id="contact-phone"
+              >
+                +33 6 50 41 22 15
+              </a>
+            </p>
+
+            <p>
+              <strong>Email:</strong>
+              <span id="contact-email"
+                >contact@pytheas-environnement.com</span
+              >
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
