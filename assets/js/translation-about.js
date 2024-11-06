@@ -165,7 +165,7 @@ document.getElementById("sustainability-text").textContent = translations[select
 
       // Pied de page
 document.getElementById("sitename").textContent = translations[selectedLanguage].footer.sitename;
-document.getElementById("about-text").textContent = translations[selectedLanguage].footer.about_text;
+document.getElementById("about-text-footer").textContent = translations[selectedLanguage].footer.about_text;
 
 document.getElementById("pages-title").textContent = translations[selectedLanguage].footer.pages_title;
 translations[selectedLanguage].footer.pages.forEach((text, index) => {
