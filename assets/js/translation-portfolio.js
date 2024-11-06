@@ -42,7 +42,7 @@ const translations = {
             sitename: "Pytheas Environnement",
             about_text: "Pytheas, votre partenaire pour des solutions de réfrigération, climatisation, et énergies renouvelables fiables. Nous proposons des installations performantes et assurons une maintenance régulière pour garantir sécurité et efficacité énergétique à long terme.",
             pages_title: "Nos pages",
-            pages: ["Accueil", "A propos", "Services", "Produits", "Contact"],
+            pages: ["Accueil", "A propos", "Services", "Portefeuille", "Contact"],
             services_title: "Nos Services",
             services: [
               "Réfrigération Industrielle",
