@@ -3,7 +3,7 @@ const translations = {
         nav_home: "Accueil",
         nav_about: "À propos",
         nav_services: "Services",
-        nav_products: "Produits",
+        nav_products: "Portefeuille",
         nav_contact: "Contact",
         hero_section: {
             title: "Expertise en Énergie  depuis 2004",

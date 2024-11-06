@@ -4,7 +4,7 @@ const translations = {
         nav_home: "Accueil",
         nav_about: "À propos",
         nav_services: "Services",
-        nav_products: "Produits",
+        nav_products: "Portefeuille",
         nav_contact: "Contact",
         call_to_action: {
             title: "Rejoignez-nous pour transformer votre entreprise !",
