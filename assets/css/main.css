@@ -2483,3 +2483,17 @@ section,
 }
 
 
+.language-selector {
+  display: flex;
+  gap: 10px; /* espace entre les drapeaux */
+}
+
+.flag-icon {
+  width: 30px; /* ajustez la taille du drapeau */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.flag-icon:hover {
+  transform: scale(1.1); /* effet au survol */
+}

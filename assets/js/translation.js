@@ -209,8 +209,8 @@ const translations = {
 
 };
 
-function translateContent() {
-    const selectedLanguage = document.getElementById("languageSelector").value;
+function translateContent(lang) {
+    const selectedLanguage = lang;
 
     // Traduire chaque élément du menu de navigation
     document.getElementById("nav-home").textContent = translations[selectedLanguage].nav_home;
