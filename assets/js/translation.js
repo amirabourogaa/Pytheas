@@ -96,7 +96,7 @@ const translations = {
               "Maintenance Continue"
             ],
             contact_title: "Contact",
-            contact_location: "Tunis, Tunisie",
+            contact_location: "Tunisie, France",
             contact_email: "contact@pytheas-environnement.com"
           }
     },

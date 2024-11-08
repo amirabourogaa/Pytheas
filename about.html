@@ -67,14 +67,20 @@
 
             <!-- Sélecteur de langue intégré dans le menu -->
             <li>
-              <select
-                id="languageSelector"
-                class="button-style"
-                onchange="translateContent()"
-              >
-                <option value="fr">Français</option>
-                <option value="en">English</option>
-              </select>
+              <div class="language-selector">
+                <img
+                  src="https://www.countryflags.com/wp-content/uploads/france-flag-png-xl.png"
+                  alt="Français"
+                  class="flag-icon"
+                  onclick="translateContent('fr')"
+                />
+                <img
+                  src="https://www.countryflags.com/wp-content/uploads/united-kingdom-flag-png-xl.png"
+                  alt="English"
+                  class="flag-icon"
+                  onclick="translateContent('en')"
+                />
+              </div>
             </li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -328,7 +334,7 @@
               class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
             >
               <h4 id="contact-title"><strong>Contact</strong></h4>
-              <p id="contact-location"><strong>Tunis, Tunisie</strong></p>
+              <p id="contact-location"><strong>Tunisie, France</strong></p>
               <p class="mt-4">
                 <strong>Telephone:</strong><br />
                 <span><i class="bi bi-whatsapp"></i> </span>

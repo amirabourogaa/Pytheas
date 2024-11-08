@@ -52,7 +52,7 @@ const translations = {
               "Maintenance Continue"
             ],
             contact_title: "Contact",
-            contact_location: "Tunis, Tunisie",
+            contact_location: "Tunisie, France",
             contact_phone: "+216 29 706 959",
             contact_email: "contact@pytheas-environnement.com"
           }
@@ -119,8 +119,8 @@ const translations = {
     }
 }
 
-function translateContent() {
-    const selectedLanguage = document.getElementById("languageSelector").value;
+function translateContent(lang) {
+    const selectedLanguage = lang;
       // Traduire chaque élément du menu de navigation
       document.getElementById("nav-home").textContent = translations[selectedLanguage].nav_home;
       document.getElementById("nav-about").textContent = translations[selectedLanguage].nav_about;
